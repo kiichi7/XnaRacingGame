@@ -1,0 +1,683 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>5279a738-901f-48e1-896e-4c45f9a5154e</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <XnaFrameworkVersion>v2.0</XnaFrameworkVersion>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XnaGraphicEngineContentProcessor, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\XnaGraphicEngineContentProcessor\bin\x86\Debug\XnaGraphicEngineContentProcessor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlphaDeadTree.X">
+      <Name>AlphaDeadTree</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="AlphaPalm.X">
+      <Name>AlphaPalm</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="AlphaPalm2.X">
+      <Name>AlphaPalm2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="AlphaPalm3.X">
+      <Name>AlphaPalm3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="AlphaPalmSmall.X">
+      <Name>AlphaPalmSmall</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="AlphaTrain.X">
+      <Name>AlphaTrain</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Banner.X">
+      <Name>Banner</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Banner2.X">
+      <Name>Banner2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Banner3.X">
+      <Name>Banner3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Banner4.X">
+      <Name>Banner4</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Banner5.X">
+      <Name>Banner5</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Banner6.X">
+      <Name>Banner6</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Blockade.X">
+      <Name>Blockade</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Blockade2.X">
+      <Name>Blockade2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Building.X">
+      <Name>Building</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Building2.X">
+      <Name>Building2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Building3.X">
+      <Name>Building3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Building4.X">
+      <Name>Building4</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Building5.X">
+      <Name>Building5</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Car.x">
+      <Name>Car</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="CarSelectionPlate.X">
+      <Name>CarSelectionPlate</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Casino01.X">
+      <Name>Casino01</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Circle.dds">
+      <Name>Circle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="CityGround.dds">
+      <Name>CityGround</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="CityGroundNormal.dds">
+      <Name>CityGroundNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <None Include="CombiBuildings.CombiModel">
+      <Name>CombiBuildings</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiHotels.CombiModel">
+      <Name>CombiHotels</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiOilTanks.CombiModel">
+      <Name>CombiOilTanks</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiPalms.CombiModel">
+      <Name>CombiPalms</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiPalms2.CombiModel">
+      <Name>CombiPalms2</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiRuins.CombiModel">
+      <Name>CombiRuins</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiRuins2.CombiModel">
+      <Name>CombiRuins2</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiSandCastle.CombiModel">
+      <Name>CombiSandCastle</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiStones.CombiModel">
+      <Name>CombiStones</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiStones2.CombiModel">
+      <Name>CombiStones2</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="Glow.dds">
+      <Name>Glow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Goal.X">
+      <Name>Goal</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="GuardRailHolder.X">
+      <Name>GuardRailHolder</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Halo.dds">
+      <Name>Halo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Hotel01.X">
+      <Name>Hotel01</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Hotel02.X">
+      <Name>Hotel02</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Hydrant.X">
+      <Name>Hydrant</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Kaktus.X">
+      <Name>Kaktus</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Kaktus2.X">
+      <Name>Kaktus2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="KaktusBenny.X">
+      <Name>KaktusBenny</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="KaktusSeg.X">
+      <Name>KaktusSeg</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Landscape.dds">
+      <Name>Landscape</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="LandscapeDetail.dds">
+      <Name>LandscapeDetail</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <None Include="LandscapeHeights.data">
+      <Name>LandscapeHeights</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="LandscapeNormal.dds">
+      <Name>LandscapeNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="LandscapeNormalMapping.fx">
+      <Name>LandscapeNormalMapping</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Laterne.X">
+      <Name>Laterne</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Laterne2Sides.X">
+      <Name>Laterne2Sides</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Lens.dds">
+      <Name>Lens</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="LineRendering.fx">
+      <Name>LineRendering</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Noise128x128.dds">
+      <Name>Noise128x128</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="NormalMapping.fx">
+      <Name>NormalMapping</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="OilPump.X">
+      <Name>OilPump</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="OilTanks.X">
+      <Name>OilTanks</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="pokal1.dds">
+      <Name>pokal1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="pokal2.dds">
+      <Name>pokal2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="pokal3.dds">
+      <Name>pokal3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="PostScreenGlow.fx">
+      <Name>PostScreenGlow</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="PostScreenMenu.fx">
+      <Name>PostScreenMenu</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="PostScreenShadowBlur.fx">
+      <Name>PostScreenShadowBlur</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="PreScreenSkyCubeMapping.fx">
+      <Name>PreScreenSkyCubeMapping</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="ReflectionSimpleGlass.fx">
+      <Name>ReflectionSimpleGlass</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Ring.dds">
+      <Name>Ring</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Road.dds">
+      <Name>Road</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="RoadBack.dds">
+      <Name>RoadBack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="RoadBackNormal.dds">
+      <Name>RoadBackNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="RoadColumnSegment.X">
+      <Name>RoadColumnSegment</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="RoadNormal.dds">
+      <Name>RoadNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Roadsign.X">
+      <Name>Roadsign</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Roadsign2.X">
+      <Name>Roadsign2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="RoadTunnel.dds">
+      <Name>RoadTunnel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="RoadTunnelNormal.dds">
+      <Name>RoadTunnelNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Ruin.X">
+      <Name>Ruin</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="RuinHouse.X">
+      <Name>RuinHouse</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="SandCastle.X">
+      <Name>SandCastle</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="ScreenBorderFadeout.dds">
+      <Name>ScreenBorderFadeout</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="ShadowDistanceFadeoutMap.dds">
+      <Name>ShadowDistanceFadeoutMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="ShadowMap.fx">
+      <Name>ShadowMap</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="SharpRock.X">
+      <Name>SharpRock</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="SharpRock2.X">
+      <Name>SharpRock2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Sign.X">
+      <Name>Sign</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Sign2.X">
+      <Name>Sign2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="SignCurveLeft.X">
+      <Name>SignCurveLeft</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="SignCurveRight.X">
+      <Name>SignCurveRight</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="SignWarning.X">
+      <Name>SignWarning</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="SimpleShader.fx">
+      <Name>SimpleShader</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="StartLight.X">
+      <Name>StartLight</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="StartLight2.X">
+      <Name>StartLight2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="StartLight3.X">
+      <Name>StartLight3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Stone4.X">
+      <Name>Stone4</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Stone5.X">
+      <Name>Stone5</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Streaks.dds">
+      <Name>Streaks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Sun.dds">
+      <Name>Sun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="track.dds">
+      <Name>track</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="RacerCar2.dds">
+      <Name>RacerCar2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="RacerCar3.dds">
+      <Name>RacerCar3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <None Include="TrackAdvanced.Track">
+      <Name>TrackAdvanced</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TrackBeginner.Track">
+      <Name>TrackBeginner</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TrackExpert.Track">
+      <Name>TrackExpert</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="Train.X">
+      <Name>Train</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Trashcan.X">
+      <Name>Trashcan</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Windmill.X">
+      <Name>Windmill</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="background.png">
+      <Name>background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="buttons.png">
+      <Name>buttons</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="ColorSelection.png">
+      <Name>ColorSelection</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="CreditsScreen.png">
+      <Name>CreditsScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameFont.png">
+      <Name>GameFont</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="HelpScreen.png">
+      <Name>HelpScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="ingame.png">
+      <Name>ingame</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="logoonly_exdream.png">
+      <Name>logoonly_exdream</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="logoonly_microsoft.png">
+      <Name>logoonly_microsoft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="logoonly_xna.png">
+      <Name>logoonly_xna</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="logos.png">
+      <Name>logos</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="MouseCursor.png">
+      <Name>MouseCursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="OptionsScreen.png">
+      <Name>OptionsScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sounds\RacingGame.xap">
+      <Name>RacingGame</Name>
+      <Importer>XactImporter</Importer>
+      <Processor>XactProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="RoadCement.dds">
+      <Name>RoadCement</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="RoadCementNormal.dds">
+      <Name>RoadCementNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,62 @@
+How to create a Level for RacingGame
+==================================
+
+Levels are created in 3D Studio Max (using version 8 or 9)!
+
+Use the existing landscape, which uses the following files:
+- LandscapeGridHeights.png for the vertex buffer generation (all 3d points)
+- LandscapeMap.dds, LandscapeMapNormal.dds and LandscapeMapHeight.dds for the landscape material
+- Material settings in the Landscape class.
+If you want to modify this landscape, go ahead, but the game does currently only support this
+landscape, if you want to create more, just change the Landscape class (its quite easy).
+
+Update: Due the fact that we can't directly load bitmaps or even use Texture.GetData
+on the Xbox360, I created a helper unit test to generate a binary file from LandscapeGridHeights.png.
+Please check out Landscape.GenerateLandscapeHeightFile, in the Landscape loading itself
+the new file LandscapeHeights.data will be used!
+
+Now import this landscape into 3D Studio Max and use it as your base layout
+(1 grid point=10x10 meter=10x10 pixels on LandscapeMap.dds, which means 1 m = 1 pixel!).
+You should create an extra scene for the landscape and use XRef Scene to just see the scene, but
+not modify it. This is quite useful because we have to click around a lot and don't want to change
+the landscape itself, but the track or moving objects around.
+
+Also import the sky using the SkyCubeMap.dds texture for the background (again XRef it).
+
+Tracks use the following textures:
+- Road.dds +Normal for the road itself
+- RoadBack.dds +Normal for the sides and the side under the road
+- Leitplanke.dds +Normal for the left and right side guard rails of the road
+- GuardRailHolder model for the piles left and right (ever 20m)
+- RoadColumnSegment model for the columns the tracks stands on (ever 100m)
+- RoadCement +Normal for the columns itself (the model is just for the ground)
+- RoadTunnel.dds +Normal for the tunnels (dont go through the landscape!)
+
+You can create the road track by creating a spline:
+- Create -> Shapes -> Spline -> Line
+Its easy just to create the spline in the top down view and then modify each point for the height, etc.
+You can also do loopings and all kinds of crazy tracks, check out the levels.
+
+Now you can create additional helpers for modifying the track.
+- Dummy Helpers (Create -> Helpers -> Dummy) are used to modify the track width.
+	The default track width is always 1.0, create a dummy and scale it (select scaling and then use
+	Tools->Transform Type-In) to something between 0.25 and 3.0 (more or less does not make much sense).
+	To reset the original track width, just set another dummy helper at the position where to stop.
+	You can set as many helpers and use as many track variations as you like, the importer will modify
+	the track accordinly (changes happen in a smooth manner).
+- Point Helpers for creating tunnels. Just start a tunnel with a point helper (Create -> Helpers -> Point)
+	and stop them again with another Point helper. If you don't use a second point helper, the tunnel will
+	not be created. Both the dummy and the point helpers must be on the track or very close to it (max. 20m
+	distance).
+	
+Finally add models and objects to the level by using 3D Studios XRef feature:
+-> File -> XRef Objects ... -> Add models from the game (trees, stones, houses) and set them,
+	if a model has multiple meshes, only the first one will be used (e.g. tree trunk is used, but leaves are ignored).
+
+Now export the whole scene excluding the landscape and the sky (which does not matter if you XRef'ed them as
+I told you above) with Collada Max 1.0.5 (download here: http://www.feelingsoftware.com/component/option,com_docman/Itemid,80/)
+and you have your level, which can be imported by the ColladaImporter class in the game :)
+
+Have fun creating your levels.
+
+RacingGame by Benjamin Nitschke (abi@exdream.com) 2006 (c)

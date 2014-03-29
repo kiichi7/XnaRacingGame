@@ -1,0 +1,154 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{45d53462-cfe6-4648-8e77-227c118b3f05}</ProjectGuid>
+    <ProjectTypeGuids>{2DF5C3F4-5A5F-47a9-8E94-23B4456F55E2};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Xbox 360</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RacingGame</RootNamespace>
+    <AssemblyName>XnaRacingGame</AssemblyName>
+    <XnaFrameworkVersion>v2.0</XnaFrameworkVersion>
+    <XnaPlatform>Xbox 360</XnaPlatform>
+    <XnaCrossPlatformGroupID>a43471b3-f369-4d89-ba50-030c1189a440</XnaCrossPlatformGroupID>
+    <ApplicationIcon>RacingGame.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <StartupObject>RacingGame.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Xbox 360' ">
+    <OutputPath>bin\Xbox 360\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE;XBOX;XBOX360</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Xbox 360' ">
+    <OutputPath>bin\Xbox 360\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE;XBOX;XBOX360</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="GameLogic\BasePlayer.cs" />
+    <Compile Include="GameLogic\CarPhysics.cs" />
+    <Compile Include="GameLogic\ChaseCamera.cs" />
+    <Compile Include="GameLogic\Input.cs" />
+    <Compile Include="GameLogic\Physics\SpringPhysicsObject.cs" />
+    <Compile Include="GameLogic\Player.cs" />
+    <Compile Include="GameLogic\Replay.cs" />
+    <Compile Include="GameLogic\ScreenshotCapturer.cs" />
+    <Compile Include="GameScreens\CarSelection.cs" />
+    <Compile Include="GameScreens\Credits.cs" />
+    <Compile Include="GameScreens\GameScreen.cs" />
+    <Compile Include="GameScreens\Help.cs" />
+    <Compile Include="GameScreens\Highscores.cs" />
+    <Compile Include="GameScreens\IGameScreen.cs" />
+    <Compile Include="GameScreens\LogoScreens.cs" />
+    <Compile Include="GameScreens\MainMenu.cs" />
+    <Compile Include="GameScreens\Options.cs" />
+    <Compile Include="GameScreens\SplashScreen.cs" />
+    <Compile Include="GameScreens\TrackSelection.cs" />
+    <Compile Include="Graphics\BaseGame.cs" />
+    <Compile Include="Graphics\LensFlare.cs" />
+    <Compile Include="Graphics\LineManager2D.cs" />
+    <Compile Include="Graphics\LineManager3D.cs" />
+    <Compile Include="Graphics\Material.cs" />
+    <Compile Include="Graphics\MeshRenderManager.cs" />
+    <Compile Include="Graphics\Model.cs" />
+    <Compile Include="Graphics\PlaneRenderer.cs" />
+    <Compile Include="Graphics\SpriteHelper.cs" />
+    <Compile Include="Graphics\TangentVertex.cs" />
+    <Compile Include="Graphics\TestGame.cs" />
+    <Compile Include="Graphics\Texture.cs" />
+    <Compile Include="Graphics\TextureFont.cs" />
+    <Compile Include="Graphics\TextureFontBigNumbers.cs" />
+    <Compile Include="Graphics\UIRenderer.cs" />
+    <Compile Include="Helpers\ColorHelper.cs" />
+    <Compile Include="Helpers\Directories.cs" />
+    <Compile Include="Helpers\DisposeHelper.cs" />
+    <Compile Include="Helpers\FileHelper.cs" />
+    <Compile Include="Helpers\Log.cs" />
+    <Compile Include="Helpers\RandomHelper.cs" />
+    <Compile Include="Helpers\StringHelper.cs" />
+    <Compile Include="Helpers\Vector3Helper.cs" />
+    <Compile Include="Helpers\WindowsHelper.cs" />
+    <Compile Include="Helpers\XmlHelper.cs" />
+    <Compile Include="Landscapes\Landscape.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\GameSettings.cs" />
+    <Compile Include="RacingGameManager.cs" />
+    <Compile Include="Shaders\PostScreenGlow.cs" />
+    <Compile Include="Shaders\PostScreenMenu.cs" />
+    <Compile Include="Shaders\PreScreenSkyCubeMapping.cs" />
+    <Compile Include="Shaders\RenderToTexture.cs" />
+    <Compile Include="Shaders\ShaderEffect.cs" />
+    <Compile Include="Shaders\ShaderTests.cs" />
+    <Compile Include="Shaders\ShadowMapBlur.cs" />
+    <Compile Include="Shaders\ShadowMapShader.cs" />
+    <Compile Include="Shaders\VBScreenHelper.cs" />
+    <Compile Include="Sounds\Sound.cs" />
+    <Compile Include="Tracks\GuardRail.cs" />
+    <Compile Include="Tracks\Track.cs" />
+    <Compile Include="Tracks\TrackColumns.cs" />
+    <Compile Include="Tracks\TrackCombiModels.cs" />
+    <Compile Include="Tracks\TrackData.cs" />
+    <Compile Include="Tracks\TrackImporter.cs" />
+    <Compile Include="Tracks\TrackLine.cs" />
+    <Compile Include="Tracks\TrackVertex.cs" />
+    <Compile Include="UnitTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameThumbnail.png" />
+    <Content Include="Landscapes\LandscapeGridHeights.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Landscapes\LevelCreation.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RacingGame.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>5279a738-901f-48e1-896e-4c45f9a5154e</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.XML">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.NestedContent.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
